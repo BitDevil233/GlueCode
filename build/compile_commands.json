@@ -1,0 +1,8 @@
+[
+{
+  "directory": "E:/windows/project/vscode/test/testGlueCode/build",
+  "command": "g++  @CMakeFiles/glue.dir/includes_CXX.rsp -std=c++17 -g -o CMakeFiles\\glue.dir\\src\\testGlueCode.cpp.obj -c E:\\windows\\project\\vscode\\test\\testGlueCode\\src\\testGlueCode.cpp",
+  "file": "E:/windows/project/vscode/test/testGlueCode/src/testGlueCode.cpp",
+  "output": "CMakeFiles/glue.dir/src/testGlueCode.cpp.obj"
+}
+]
