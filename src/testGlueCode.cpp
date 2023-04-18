@@ -4,9 +4,10 @@
 #include <regex>
 #include <nlohmann/json.hpp>
 #include <filesystem>
+#include <experimental/filesystem>
 
 using json = nlohmann::json;    // 引入JSON库的命名空间
-namespace fs = std::filesystem; // 引入filesystem库的命名空间
+namespace fs = std::experimental::filesystem; // 引入filesystem库的命名空间
 
 // 定义一个结构体
 struct MyStruct
@@ -117,7 +118,7 @@ int main()
     std::cout << toJson(myStruct).dump() << std::endl;
 
     // 从cpp头文件中解析函数的参数并将参数序列化为JSON格式
-    json jsonObj = serializeHeader("test.h");
+    json jsonObj = serializeHeader("../test/test.h");
 
     // 输出JSON格式的参数
     std::cout << jsonObj.dump(4) << std::endl;

@@ -1,3 +1,1 @@
-C:\App\cmake\install\bin\cmake.exe -E rm -f CMakeFiles\glue.dir/objects.a
-C:\App\minGW-w64\mingw64\bin\ar.exe qc CMakeFiles\glue.dir/objects.a @CMakeFiles\glue.dir\objects1.rsp
-g++ -std=c++17 -g -Wl,--whole-archive CMakeFiles\glue.dir/objects.a -Wl,--no-whole-archive -o glue.exe -Wl,--out-implib,libglue.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\glue.dir\linkLibs.rsp
+g++  -std=c++17  -rdynamic CMakeFiles/glue.dir/src/main.cpp.o  -o glue 

@@ -12,8 +12,9 @@ SET(CMAKE_CXX_FLAGS "-std=c++17")
 include_directories(
     include
     ThirdParty/json/include
+    test
 )
 
 # 指定源文件    
-add_executable(glue src/testGlueCode.cpp)
+add_executable(glue src/main.cpp)
 # 指定头文件路径示例

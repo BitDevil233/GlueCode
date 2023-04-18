@@ -1,5 +1,6 @@
 #include <string>
-class
+class testClass
 {
+    public:
     void myFunc(int i, double d, const std::string &s);
 };
